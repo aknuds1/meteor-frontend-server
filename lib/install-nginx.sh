@@ -1,4 +1,4 @@
-set -e 
+set -e
 
 BUILD_DIR=/tmp/nginx
 NGINX_VERSION=1.8.0
@@ -30,7 +30,7 @@ cd nginx-$NGINX_VERSION
   --with-http_ssl_module --without-http_scgi_module \
   --without-http_uwsgi_module --without-http_fastcgi_module
 
-make install
+make -j8 install
 
 # remove build specific libraries
 apt-get -y remove build-essential wget
