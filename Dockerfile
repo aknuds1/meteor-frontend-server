@@ -1,5 +1,5 @@
 FROM debian
-MAINTAINER Kadira Inc.
+MAINTAINER Arve Knudsen
 
 COPY lib/install-nginx.sh /tmp/install-nginx.sh
 RUN bash /tmp/install-nginx.sh
