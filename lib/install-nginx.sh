@@ -1,7 +1,8 @@
+#!/bin/sh
 set -e
 
 BUILD_DIR=/tmp/nginx
-NGINX_VERSION=1.8.0
+NGINX_VERSION=1.9.4
 PREFIX=/opt/nginx
 NGINX_USER=nginx
 
